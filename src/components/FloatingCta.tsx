@@ -31,3 +31,4 @@ export default function FloatingCta({ gym, onOpenBooking }: FloatingCtaProps) {
     </div>
   );
 }
+

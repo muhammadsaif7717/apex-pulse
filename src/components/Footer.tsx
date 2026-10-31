@@ -127,3 +127,4 @@ export default function Footer({ gym, onOpenBooking, isClientMode }: FooterProps
     </footer>
   );
 }
+

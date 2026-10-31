@@ -204,3 +204,4 @@ export default function Navbar({ gym, onOpenBooking }: NavbarProps) {
     </header>
   );
 }
+

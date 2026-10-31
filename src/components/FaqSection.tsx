@@ -67,3 +67,4 @@ export default function FaqSection({ gym }: FaqSectionProps) {
     </section>
   );
 }
+

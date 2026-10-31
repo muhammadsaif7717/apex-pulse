@@ -102,3 +102,4 @@ export default function FacilitiesSection({ gym }: FacilitiesSectionProps) {
     </section>
   );
 }
+

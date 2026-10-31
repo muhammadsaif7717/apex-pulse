@@ -254,3 +254,4 @@ export default function Hero({ gym, onOpenBooking }: HeroProps) {
     </section>
   );
 }
+

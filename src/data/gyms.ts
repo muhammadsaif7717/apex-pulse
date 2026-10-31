@@ -917,3 +917,4 @@ export const GYM_CLUBS: GymClub[] = [
 export function getGymById(id: string): GymClub {
   return GYM_CLUBS.find((g) => g.id === id) || GYM_CLUBS[0];
 }
+
