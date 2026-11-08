@@ -1,21 +1,43 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Sora, Roboto } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const sora = Sora({
   subsets: ["latin"],
+  weight: ["300", "400", "600", "700", "800"],
+  variable: "--heading-font",
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const roboto = Roboto({
   subsets: ["latin"],
+  weight: ["300", "400", "500", "700"],
+  variable: "--body-font",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "প্রিমিয়াম ফিটনেস ক্লাব ও জিম | মেম্বারশিপ ও ফ্রি ট্রায়াল সেশন বুকিং",
+  title: "ApexPulse Fitness Studio | Achieve More Than Just Fitness",
   description:
-    "ঢাকার শীর্ষস্থানীয় ফিটনেস ও বডি ট্রান্সফর্মেশন জিমসমূহ। অলিম্পিক ইকুইপমেন্ট, সার্টিফাইড মাস্টার ট্রেইনার, জুম্বা, এরোবিক্স ও পার্সোনালাইজড ডায়েট চার্ট।",
+    "ApexPulse is an authentic high-performance fitness studio template featuring strength training, metabolic conditioning, yoga, combat kickboxing, and certified master coaching.",
+  keywords: [
+    "ApexPulse",
+    "FitFlex",
+    "Fitness Studio",
+    "Strength Training",
+    "Cardio Blast",
+    "Yoga & Flexibility",
+    "Workout Timetable",
+    "Gym Membership",
+  ],
+  authors: [{ name: "ApexPulse Fitness Studio" }],
+  openGraph: {
+    title: "ApexPulse Fitness Studio | Achieve More Than Just Fitness",
+    description:
+      "Combine strength, flexibility, and endurance in a community that values well-rounded health and supportive growth.",
+    type: "website",
+    locale: "en_US",
+  },
 };
 
 export const viewport: Viewport = {
@@ -32,13 +54,12 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="bn"
-      className={`${geistSans.variable} ${geistMono.variable} dark h-full scroll-smooth antialiased`}
+      lang="en"
+      className={`${sora.variable} ${roboto.variable} dark h-full scroll-smooth antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-zinc-950 text-zinc-100 selection:bg-amber-500 selection:text-black">
+      <body className="min-h-full flex flex-col bg-[#222222] text-white/70 selection:bg-[#f2fd84] selection:text-[#222222]">
         {children}
       </body>
     </html>
   );
 }
-
