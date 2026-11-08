@@ -8,6 +8,8 @@ import FitFlexScrollTop from "@/components/FitFlexScrollTop";
 import RevealOnScroll from "@/components/RevealOnScroll";
 import { FITFLEX_BLOGS } from "@/data/fitnessData";
 
+export const instant = false;
+
 export async function generateStaticParams() {
   return FITFLEX_BLOGS.map((post) => ({
     slug: post.slug,

@@ -10,6 +10,8 @@ import RevealOnScroll from "@/components/RevealOnScroll";
 import BookClassButton from "@/components/BookClassButton";
 import { FITFLEX_PROGRAMS } from "@/data/fitnessData";
 
+export const instant = false;
+
 export async function generateStaticParams() {
   return FITFLEX_PROGRAMS.map((prog) => ({
     slug: prog.slug,
