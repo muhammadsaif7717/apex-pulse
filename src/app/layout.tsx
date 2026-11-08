@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Sora, Roboto } from "next/font/google";
+import FitFlexBookingModal from "@/components/FitFlexBookingModal";
 import "./globals.css";
 
 const sora = Sora({
@@ -59,6 +60,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-[#222222] text-white/70 selection:bg-[#f2fd84] selection:text-[#222222]">
         {children}
+        <FitFlexBookingModal />
       </body>
     </html>
   );

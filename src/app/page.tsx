@@ -1,5 +1,6 @@
 import FitFlexHeader from "@/components/FitFlexHeader";
 import FitFlexHero from "@/components/FitFlexHero";
+import FitFlexMarquee from "@/components/FitFlexMarquee";
 import FitFlexPrograms from "@/components/FitFlexPrograms";
 import FitFlexTestimonials from "@/components/FitFlexTestimonials";
 import FitFlexPricing from "@/components/FitFlexPricing";
@@ -17,6 +18,9 @@ export default function HomePage() {
       <main className="flex-1">
         {/* Hero Section */}
         <FitFlexHero />
+
+        {/* Live Neon Ticker Marquee */}
+        <FitFlexMarquee />
 
         {/* Programs / Path to Fitness */}
         <FitFlexPrograms />
